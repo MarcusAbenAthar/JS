@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculadora de IMC</title>
+    <link rel="stylesheet" href="assets/style.css" />
+  </head>
+
+  <body>
+    <main>
+      <div class="fields">
+        <section class="field-name">
+          <label for="name"> Nome: </label>
+          <input class="input-data" id="name" type="text" />
+        </section>
+        <section class="field-height">
+          <label for="height"> Altura: </label>
+          <input class="input-data" id="height" type="text" />
+        </section>
+        <section class="field-weight">
+          <label for="weight"> Peso: </label>
+          <input class="input-data" id="weight" type="text" />
+        </section>
+        <section class="field-gender">
+          <label> Sexo: </label>
+          <input type="radio" class="radio-gender" name="gender" id="masc" />
+          <label> Masculino </label>
+          <input type="radio" class="radio-gender" name="gender" id="fem" />
+          <label> Feminino </label>
+        </section>
+        <section class="field-button">
+          <button onclick="calculate()" id="calculate">Calcular</button>
+          <button id="reset">Resetar</button>
+        </section>
+        <section class="field-result">
+          <label for="result"> Resultado: </label>
+          <input class="input-data" id="result" type="text" disabled />
+        </section>
+      </div>
+    </main>
+  </body>
+  <script src="/assets/script.js"></script>
+</html>
