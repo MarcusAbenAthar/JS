@@ -5,6 +5,9 @@
 }
 
 .fields {
+  border-radius: 5vh;
+  background-color: darkgray;
+  border: black 1px double;
   margin: 10%;
   display: flex;
   align-items: center;
@@ -12,22 +15,13 @@
   flex-wrap: nowrap;
   justify-content: center;
 }
+
 .fields > section {
   padding: 10px;
 }
 .fields > section > label {
   display: block;
   margin-bottom: 1.3vh;
-}
-
-.radio-gender {
-  margin: 0 1vh 1.3vh 1vh;
-}
-
-.field-gender {
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 .fields > .field-button > button {
   padding: 10px 20px;
@@ -41,4 +35,17 @@
   padding: 10px;
   border-radius: 5px;
   border: 1px solid #f1f1f1;
+  background-color: #f1f1f1;
+}
+
+.data-result {
+  display: none;
+  padding: 10px;
+  border-radius: 5px;
+  margin-top: 10px;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-content: space-between;
+  justify-content: center;
+  align-items: center;
 }
